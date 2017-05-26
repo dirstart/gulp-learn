@@ -98,11 +98,18 @@
 		// 	"auto":5000
 		// });
 
-
-		Tab.Init($(".js-tab"));
+// 第一种，在html中挨个创建类
 		// var tab1=new Tab($(".js-tab").eq(0));
 		// var tab2=new Tab($(".js-tab").eq(1));
 		// var tab3=new Tab($(".js-tab").eq(2));
-	});
+// 第二种，在类中封装创建类
+		// Tab.Init($(".js-tab"));
+
+// 第三种，封装成jQuery插件
+		
+		$(".js-tab").tab();
+
+		// $(".js-tab").tab().css("backgroundColor","green");
+});
 </script>
 </html>

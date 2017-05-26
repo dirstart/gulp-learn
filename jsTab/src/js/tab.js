@@ -113,6 +113,17 @@
 
 	};
 
+	// 注册成jQuery方法
+
+	$.fn.extend({
+		tab:function(){
+			this.each(function(){
+				new Tab($(this));
+			});
+			return this;
+		}
+	});
+
 
 	window.Tab = Tab;
 }(jQuery);
