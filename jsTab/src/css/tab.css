@@ -1,0 +1,53 @@
+.tab {
+  width: 300px;
+  overflow: hidden;
+}
+.tab .tab-nav {
+  overflow: hidden;
+  height: 30px;
+}
+.tab .tab-nav li {
+  float: left;
+  margin-right: 5px;
+  background-color: #767676;
+  border-radius: 3px 3px 0 0;
+}
+.tab .tab-nav li a {
+  display: block;
+  height: 30px;
+  color: #fff;
+  padding: 0 20px;
+  line-height: 30px;
+}
+.tab .tab-nav li.actived {
+  background-color: #fff;
+}
+.tab .tab-nav li.actived a {
+  color: #000;
+}
+.tab .tab-content-wrap {
+  overflow: hidden;
+  height: 200px;
+  padding: 5px;
+  background-color: #fff;
+}
+.tab .tab-content-wrap .tab-content-item {
+  display: none;
+  position: absolute;
+  font-size: 0;
+}
+.tab .tab-content-wrap .tab-content-item img {
+  width: 290px;
+  height: 200px;
+}
+.tab .tab-content-wrap .current {
+  display: block;
+}
+.tab-view {
+  float: left;
+  margin-right: 50px;
+}
+.tab-view p {
+  color: #fff;
+  margin-bottom: 20px;
+}
